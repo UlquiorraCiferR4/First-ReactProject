@@ -1,0 +1,46 @@
+/* the start page style */
+@font-face {
+    font-family: Font;
+    src: url("../../assets/fonts/Nightcore\ Demo.ttf");
+}
+#StartBody{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../../assets/pics/wallpaper.png");
+    background-position: center;
+    background-size: cover;
+
+}
+header {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+#StartBody h1 {
+    font-family: Font;
+    background: linear-gradient( 180deg,rgb(32, 227, 178) 5%, #1693c5 20%,rgb(53, 86, 185) 30%,rgb(148, 3, 56), rgb(40, 7, 40) 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#icon{
+    height: 50px;
+    width: 50px;
+position: absolute;
+left: 0;
+}
+
+/*  header style */
+
+#Header{
+    margin: 5px;
+    height: 10vh ;
+    width:calc(100vw - 10px);
+    border-radius: 7px;
+    position: absolute;
+}
+
+
+
+
+

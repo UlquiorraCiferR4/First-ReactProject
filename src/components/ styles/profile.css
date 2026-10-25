@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+.hud {
+    position: relative;
+    width: min(500px, 95%);
+    min-height: 250px;
+    padding: 12px 20px;
+    margin: 30px auto;
+
+    color: #55fff0;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+
+    background:
+        repeating-linear-gradient(
+            0deg,
+            transparent 0px,
+            transparent 3px,
+            #00ffe508 4px
+        ),
+        radial-gradient(ellipse at center, #00483f, #001817 80%);
+
+    border: 1px solid #00fff0;
+    box-shadow:
+        0 0 8px #00fff0,
+        inset 0 0 18px #00fff033;
+
+    overflow: hidden;
+}
+
+/* Decorative inner frame */
+.hud::before {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    border: 1px solid #00fff055;
+    pointer-events: none;
+}
+
+.hud-top,
+.hud-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 8px;
+    color: #36bfb8;
+}
+
+.hud-content {
+    display: grid;
+    grid-template-columns: 42% 58%;
+    gap: 15px;
+    margin-top: 12px;
+}
+
+.character {
+    min-width: 0;
+}
+
+.portrait {
+    width: 100%;
+    height: 85px;
+    border: 1px solid #53fff0;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #00fff088;
+}
+
+.portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.character h2 {
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin: 7px 0 3px;
+    text-shadow: 0 0 8px #00fff0;
+}
+
+.character p {
+    margin: 3px 0;
+    color: #7cece2;
+}
+
+.statistics {
+    min-width: 0;
+    line-height: 1.35;
+}
+
+.statistics h3 {
+    margin: 0 0 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.statistics p {
+    margin: 2px 0;
+    overflow-wrap: anywhere;
+}
+
+.hud-bottom {
+    margin-top: 15px;
+    padding-top: 6px;
+    border-top: 1px solid #00fff055;
+}
+
+@media (max-width: 400px) {
+    .hud {
+        padding: 12px;
+    }
+
+    .hud-content {
+        grid-template-columns: 40% 60%;
+        gap: 10px;
+    }
+
+    .statistics {
+        font-size: 9px;
+    }
+
+    .statistics h3 {
+        font-size: 10px;
+    }
+}
