@@ -7,7 +7,10 @@
     font-family: popins;
     src: url("../../assets/fonts/Poppins-Regular.woff");
 }
-
+@font-face {
+    font-family: tokyo;
+    src: url("../../assets/fonts/ModernTokyo.ttf");
+}
 #StartBody{
     height: 100vh;
     width: 100vw;
@@ -16,27 +19,31 @@
     background-size: cover;
 
 }
-header {
-    width: 100%;
-    height: 30%;
-    text-align: center;
-}
 #StartBody h1 {
     font-family: Font;
-    background: linear-gradient( 180deg,rgb(32, 227, 178) 5%, #1693c5 20%,rgb(53, 86, 185) 30%,rgb(148, 3, 56), rgb(40, 7, 40) 80%);
+    background: linear-gradient( 10deg,rgb(32, 227, 178) 5%, #1693c5 20%,rgb(53, 86, 185) 30%,rgb(148, 3, 56), rgb(40, 7, 40) 80%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
-#icon{
-    height: 50px;
-    width: 50px;
+
+#title {
     position: absolute;
-    left: 0;
+    top: 5vh;
+    transform: translateX(40%);
+    font-family: tokyo;
+    text-align: center;
+    background: linear-gradient( rgb(32, 227, 178) 5%, #1693c5 20%,rgb(34, 123, 90) 30%,cyan, rgb(99, 4, 99) 80%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-/*  header style */
 
+/*  header style */
 #Header{
     margin: 5px;
     height: 10vh ;
@@ -45,7 +52,11 @@ header {
     position: absolute;
 }
 
-
+#loginBtn:hover{
+    cursor: pointer;
+    margin-right: 5px;
+    padding: 4px 14px;
+}
 #loginBtn {
     background-color: #ffffff23;
     color: greenyellow;
@@ -67,9 +78,10 @@ header {
     border-top: solid 1px #ffffff77;
 
 }
-
-
-span{
+#meteo:hover {height: 151px;}
+#login:hover{color: greenyellow;}
+#login:visited{color:white}
+#login{
     color: white;
     font-family: popins;
     font-size: 0.7em;
@@ -78,15 +90,20 @@ span{
     left: 50%;
     transform: translateX(-50%);
     bottom: 70px;
-
-
 }
-#anas{
-    font-family: Font;
-    background-image: linear-gradient(90deg,Red 30%, orange, yellow, green, blue, indigo, violet);
-    /* background: linear-gradient( 180deg,rgb(32, 227, 178) 5%, #1693c5 20%,rgb(53, 86, 185) 30%,rgb(148, 3, 56), rgb(40, 7, 40) 80%); */
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+p#card {
+    margin-top: 50px;
+    z-index: 8;
+    color: white;
+    font-size: 15px;
+    display: block;
+    position: unset;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 20px;
+    padding-top: 30px;
+    
+}
 
+#loginBtn:hover::after {
+    content: "";
 }
