@@ -21,8 +21,8 @@ function Header(){
 function StartPage() {    
     return (
         <div id="StartBody">
-            <Header/>
-            <h1>Anas So Gayy ! </h1>
+            <Header/><br /><br /><br /><br /><br />
+            <h2 id="anas">$$$$$$$$Anas So Gayy ! </h2>
         </div>
     );
 }

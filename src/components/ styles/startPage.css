@@ -31,8 +31,8 @@ header {
 #icon{
     height: 50px;
     width: 50px;
-position: absolute;
-left: 0;
+    position: absolute;
+    left: 0;
 }
 
 /*  header style */
@@ -79,5 +79,14 @@ span{
     transform: translateX(-50%);
     bottom: 70px;
 
+
+}
+#anas{
+    font-family: Font;
+    background-image: linear-gradient(90deg,Red 30%, orange, yellow, green, blue, indigo, violet);
+    /* background: linear-gradient( 180deg,rgb(32, 227, 178) 5%, #1693c5 20%,rgb(53, 86, 185) 30%,rgb(148, 3, 56), rgb(40, 7, 40) 80%); */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 
 }
