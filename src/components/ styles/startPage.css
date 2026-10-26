@@ -12,7 +12,7 @@
     src: url("../../assets/fonts/ModernTokyo.ttf");
 }
 #StartBody{
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
     background-image: url("../../assets/pics/wallpaper.png");
     background-position: center;
