@@ -22,6 +22,7 @@ function StartPage() {
     return (
         <div id="StartBody">
             <Header/>
+            <h1>Anas So Gayy ! </h1>
         </div>
     );
 }
