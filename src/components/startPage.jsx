@@ -29,8 +29,10 @@ function StartPage() {
 
 function Card() {
     return(<>
-        <p id='card'>Hello there ,<br/> Wanna watch some ANime <br/> but  didn't find Where</p>
-    </>);
+      <div className="card">
+         <p id='card'>Hello there ,<br/> Wanna watch some ANime <br/> but  didn't find Where ...</p>
+      </div>
+         </>);
 }
 
 
